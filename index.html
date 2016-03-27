@@ -3,19 +3,35 @@
   <head>
   </head>
   <body style="height:100%; margin:0;">
-    <!-- <header style="border-bottom: 1px solid; padding: 10px 0;">
-      Some animation tests
-    </header> -->
-    <div id="test" style="height:300px;width:400px;">
+    <header style="border-bottom: 1px solid; padding: 10px 0; text-align:center">
+      <h2>Backgroundor <br/> jQuery animation plugin for background color</h2>
+    </header>
+
+    <h3 style="text-align:center;">Opacity Animation</h3>
+    <br/>
+    <div id="test" style="height:300px;width:400px;margin:0 auto;">
 
     </div>
+    <br/><br/>
+    <h3 style="text-align:center;">Gradient Animation</h3>
+    <br/>
+    <div id="test2" style="height:300px;width:400px;margin:0 auto;">
+
+    </div>
+    <br/><br/>
+
+    <h4 style="text-align:center;"><u>Plugin is not finished yet so that's it for the moment!.</u></h4>
+
+    <br/><br/>
+
     <script src="./jQuery191.js"></script>
     <script src="./backgroundor.js"></script>
 
     <script type="text/javascript">
       $(document).ready(function() {
         console.log('thoz');
-        $('#test').backgroundor('gradient');
+        $('#test').backgroundor('opacity');
+        $('#test2').backgroundor('gradient');
       });
     </script>
   </body>

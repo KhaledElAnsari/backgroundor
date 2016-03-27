@@ -67,14 +67,26 @@
           }
         }
 
-        var color = 'linear-gradient(to right,' + colors[colors.length - 1] + ' ' + '0%';
+        var color1 = '-webkit-linear-gradient(bottom,' + colors[colors.length - 1] + ' ' + '0%';
+        var color2 = '-moz-linear-gradient(bottom,' + colors[colors.length - 1] + ' ' + '0%';
+        var color3 = '-o-linear-gradient(bottom,' + colors[colors.length - 1] + ' ' + '0%';
+        var color4 = 'linear-gradient(to bottom,' + colors[colors.length - 1] + ' ' + '0%';
         for (var i = 0; i < colors.length; i++) {
-          color = color + ', ' + colors[i] + ' ' + values[i] + '%';
+          color1 = color1 + ', ' + colors[i] + ' ' + values[i] + '%';
+          color2 = color2 + ', ' + colors[i] + ' ' + values[i] + '%';
+          color3 = color3 + ', ' + colors[i] + ' ' + values[i] + '%';
+          color4 = color4 + ', ' + colors[i] + ' ' + values[i] + '%';
         }
-        color += ')';
+        color1 += ')';
+        color2 += ')';
+        color3 += ')';
+        color4 += ')';
 
         $(elem).css({
-          'background':color,
+          'background':color1,
+          'background':color2,
+          'background':color3,
+          'background':color4,
         });
       }, intervaltime);
     };
