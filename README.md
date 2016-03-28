@@ -39,6 +39,9 @@ Backgroundor is a jQuery plugin made to be the Background Animator and that's wh
   }
   ```
 
+  for the gradient values I would suggest the website below to help you
+  > http://www.colorzilla.com/gradient-editor/
+
 # How to Use it
   It's easy like every jQuery plugin, just print the following:
   `$('#div').backgroundor();`
