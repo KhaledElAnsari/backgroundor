@@ -27,7 +27,7 @@ Backgroundor is a jQuery plugin made to be the Background Animator and that's wh
 
   ###### options
   Options is an object with following elements:
-  ```
+  ```javascript
   options = {
     opacityval    : 0; // int, only 1 or 0 are accepted now (can be boolean too)
     intervaltime  : 100; // int, interval time value
@@ -45,4 +45,4 @@ Backgroundor is a jQuery plugin made to be the Background Animator and that's wh
   The default will opacity animation with `100ms` speedtime, to change the defaults look at the [API Reference](https://github.com/KhaledElAnsari/backgroundor#api-reference) for more information.
 
 # Work in progress
-  In the future I'll be adding a function for the radial-gradient animation and of course some enhancements. 
+  In the future I'll be adding a function for the radial-gradient animation and of course some enhancements.
