@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html style="height:100%;">
   <head>
+    <title>Backgroundor</title>
   </head>
   <body style="height:100%; margin:0;">
     <header style="border-bottom: 1px solid; padding: 10px 0; text-align:center">
@@ -9,14 +10,18 @@
 
     <h3 style="text-align:center;">Opacity Animation</h3>
     <br/>
-    <div id="test" style="height:300px;width:400px;margin:0 auto;">
+    <div>
+      <div id="test" style="height:300px;width:400px;margin:0 auto;">
 
+      </div>
     </div>
     <br/><br/>
     <h3 style="text-align:center;">Gradient Animation</h3>
     <br/>
-    <div id="test2" style="height:300px;width:400px;margin:0 auto;">
+    <div>
+      <div id="test2" style="height:300px;width:400px;margin:0 auto;">
 
+      </div>
     </div>
     <br/><br/>
 
@@ -25,13 +30,13 @@
     <br/><br/>
 
     <script src="./jQuery191.js"></script>
-    <script src="./backgroundor.js"></script>
+    <script src="./backgroundor.jquery.js"></script>
+    <!-- <script src="./index_dev.js"></script> -->
 
     <script type="text/javascript">
       $(document).ready(function() {
-        console.log('thoz');
-        $('#test').backgroundor('opacity');
-        $('#test2').backgroundor('gradient');
+        $('#test').backgroundor('opacity',{intervaltime: 1000, opacityval: true});
+        $('#test2').backgroundor('lgradient',{intervaltime: 80});
       });
     </script>
   </body>
