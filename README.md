@@ -1,12 +1,12 @@
 # Backgroundor
-Backgroundor is a jQuery plugin made to be the Background Animator and that's where the name came from!, this plugin is originally made to ease the pain of the `linear-gradient` animation.
+Backgroundor is a jQuery plugin made to be the Background Animator and that's where the name came from!, this plugin is originally made to ease the pain of the **gradient** animation.
 
 # Examples
   To see the plugin in action go to [Backgroundor Plugin Page](http://khaledelansari.com/backgroundor/). You'll find some examples and some cool ideas for using this plugin.
 
 # Installation
   This plugin depends on **jQuery** only (any version above/equal 1.7 will be ok), so all you have to do is the following:
-  ```
+  ```javascript
   <script type="text/javascript" src="/js/jQuery191.js"></script>
   <script type="text/javascript" src="/js/backgroundor.jquery.js"></script>
   ```
@@ -28,6 +28,7 @@ Backgroundor is a jQuery plugin made to be the Background Animator and that's wh
   ###### options
   Options is an object with following elements:
   ```javascript
+  // the values here are the default values
   options = {
     opacityval    : 0; // int, only 1 or 0 are accepted now (can be boolean too)
     intervaltime  : 100; // int, interval time value

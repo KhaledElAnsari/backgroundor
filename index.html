@@ -1,40 +1,61 @@
 <!DOCTYPE html>
-<html style="height:100%;">
+<html>
   <head>
     <title>Backgroundor</title>
+    <link rel="stylesheet" href="./index.css" />
   </head>
-  <body style="height:100%; margin:0;">
-    <header style="border-bottom: 1px solid; padding: 10px 0; text-align:center">
-      <h2>Backgroundor <br/> jQuery animation plugin for background color</h2>
+  <body>
+    <header>
+      <h2>Backgroundor</h2>
+      <p>The solution for gradient animation</p>
     </header>
 
-    <h3 style="text-align:center;">Opacity Animation</h3>
-    <br/>
-    <div>
-      <div id="test" style="height:300px;width:400px;margin:0 auto;">
+    <p class="intro">
+      Backgroundor is a jQuery plugin for animating gradient backgrounds.
+      <br/><br/>
+      Below you can see the availabe animations.
+    </p>
 
+    <h2 class="title">
+      <span>Opacity Animation</span>
+    </h2>
+    <div class="example">
+      <div id="test">
       </div>
     </div>
-    <br/><br/>
-    <h3 style="text-align:center;">Gradient Animation</h3>
-    <br/>
-    <div>
-      <div id="test2" style="height:300px;width:400px;margin:0 auto;">
 
+    <h2 class="title">
+      <span>Linear-gradient Animation</span>
+    </h2>
+
+    <div class="example">
+      <div id="test2">
       </div>
     </div>
-    <br/><br/>
 
-    <h4 style="text-align:center;"><u>Plugin is not finished yet so that's it for the moment!.</u></h4>
+    <h2 class="title">
+      <span>Radial-gradient Animation (Soon)</span>
+    </h2>
 
-    <br/><br/>
+    <p class="intro" style="margin-bottom: 0;">
+      I know what you're thinking about "how useless is this!" so here's some cool ideas on how to use this plugin:
+    </p>
+    <div class="intro">
+      <a href="#">Page Preloader</a>,
+      <a href="#">Header Effect</a>,
+      <a href="#">Image Preloader</a>
+    </div>
+
+    <footer>
+      
+    </footer>
 
     <script src="./jQuery191.js"></script>
     <script src="./backgroundor.jquery.js"></script>
-    <!-- <script src="./index_dev.js"></script> -->
 
     <script type="text/javascript">
       $(document).ready(function() {
+        $('header').backgroundor('lgradient',{intervaltime: 80, colors: ['#3b679e','#137FD8','#7db9e8']});
         $('#test').backgroundor('opacity',{intervaltime: 1000, opacityval: true});
         $('#test2').backgroundor('lgradient',{intervaltime: 80});
       });
