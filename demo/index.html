@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width; initial-scale=1.0">
+    <title>Backgroundor</title>
+    <link rel="stylesheet" href="./css/index.css" />
+    <link rel="stylesheet" href="./css/font-awesome.min.css" />
+  </head>
+  <body>
+    <header>
+      <h2>Backgroundor</h2>
+      <p>The solution for gradient animation</p>
+    </header>
+
+    <p class="intro">
+      Backgroundor is a jQuery plugin for animating gradient backgrounds.
+      <br/><br/>
+      Below you can see the availabe animations.
+    </p>
+
+    <h2 class="title">
+      <span>Linear-gradient Animation</span>
+    </h2>
+
+    <div class="example">
+      <div id="test2">
+      </div>
+    </div>
+
+    <h2 class="title">
+      <span>Radial-gradient Animation (Soon)</span>
+    </h2>
+
+    <div class="example">
+      <div id="test3">
+      </div>
+    </div>
+
+    <h2 class="title">
+      <span>Opacity Animation</span>
+    </h2>
+    <div class="example">
+      <div id="test">
+      </div>
+    </div>
+
+    <p class="intro" style="margin-bottom: 0;">
+      I know what you're thinking about "how useless is this!" it's ok I got you, here's some cool ideas on how to use this plugin:
+    </p>
+    <div class="intro">
+      <a href="pagepreloader.html">Page Preloader</a>,
+      <a href="header.html">Header Effect</a>,
+      <a href="imgpreloader.html">Image Preloader</a>
+    </div>
+
+    <p class="intro">
+      That's it, hope you liked the project :)
+    </p>
+
+    <footer>
+      <ul class="contacticons">
+  			<li><a href="https://twitter.com/KhaledElAnsari" target="_blank" title="Twitter"><i class="fa fa-twitter"></i></a></li>
+  			<li><a href="https://jo.linkedin.com/in/khaled-al-ansari-3b1885a6" target="_blank" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
+  			<li><a href="https://github.com/KhaledElAnsari" target="_blank" title="Github"><i class="fa fa-github"></i></a></li>
+        <li><a href="http://stackoverflow.com/users/4341572/khaled-al-ansari" target="_blank" title="Stackoverflow"><i class="fa fa-stack-overflow"></i></a></li>
+  			<li><a href="mailto:khaledelansari@gmail.com" title="Email"><i class="fa fa-envelope"></i></a></li>
+  		</ul>
+  		<p>Copyright &copy; All Rights Reserved &middot; Khaled Al-Ansari &middot;</p>
+    </footer>
+
+    <script src="./js/jQuery191.js"></script>
+    <script src="./js/backgroundor.jquery.js"></script>
+
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $('header').backgroundor('lgradient',{intervaltime: 80, colors: ['#3b679e','#137FD8','#7db9e8']});
+        $('#test').backgroundor('opacity',{intervaltime: 1500, opacityval: true});
+        $('#test2').backgroundor('lgradient',{intervaltime: 80, colors: ['#b3dced','#29b8e5','#bce0ee']});
+      });
+    </script>
+  </body>
+</html>

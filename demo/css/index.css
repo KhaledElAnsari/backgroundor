@@ -1,0 +1,121 @@
+body {
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  margin: 0;
+  background: #f0f0f0;
+  color: #7f8c90;
+}
+header {
+  border-bottom: 1px solid rgba(99, 103, 110, 0.91);
+  padding: 65px 0 0;
+  text-align:center;
+  height: 155px;
+  width: 100%;
+  color: #094B7C;
+}
+header h2 {
+  margin: 0 0 10px;
+  font-size: 36px;
+}
+header p {
+  margin: 15px 0 0;
+  font-size: 22px;
+}
+h2.title {
+  font-size: 26px;
+  text-align: center;
+  margin: 25px 0;
+}
+p.intro {
+  font-size: 20px;
+  text-align: center;
+  margin: 60px auto 40px;
+  max-width: 700px;
+}
+p.intro a {
+  color: coral;
+  text-decoration: none;
+}
+p.intro a:hover {
+  text-decoration: underline;;
+}
+div.intro {
+  font-size: 16px;
+  text-align: center;
+  margin: 10px auto 40px;
+  max-width: 700px;
+}
+div.intro a {
+  margin-top: 10px;
+  color: coral;
+  text-decoration: none;
+}
+div.intro a:hover {
+  text-decoration: underline;
+}
+h2.title span {
+  position: relative;
+}
+h2.title span:before {
+  right: 100%;
+  margin-right: 30px;
+  content: "";
+  position: absolute;
+  border-top: 3px solid #9ba6b5;
+  width: 100px;
+  height: 3px;
+  top: 50%;
+}
+h2.title span:after {
+  left: 100%;
+  margin-left: 30px;
+  content: "";
+  position: absolute;
+  border-top: 3px solid #9ba6b5;
+  width: 100px;
+  height: 3px;
+  top: 50%;
+}
+div.example {
+  margin: 40px 0;
+}
+div.example > div {
+  height:300px;
+  width:400px;
+  margin:0 auto;
+}
+footer {
+  padding: 30px 0;
+  width: 100%;
+  /*border-top: 1px solid rgba(99, 103, 110, 0.91);*/
+  background: #DFDFDF;
+  text-align: center;
+  color: #9D9D9D;
+}
+footer .contacticons {
+  list-style: none;
+  width: 100%;
+  display: inline-block;
+  margin: 0 0 15px;
+  padding: 0;
+}
+footer .contacticons li {
+  display: inline-block;
+  margin: 0 12px;
+  font-size: 22px;
+}
+footer .contacticons li a {
+  color: inherit;
+}
+footer .contacticons li a:hover, footer .contacticons li a:focus {
+  color: #4696E5;
+}
+footer p {
+  margin: 0;
+}
+
+#test {
+  background: black;
+}
+pre.prettyprint {
+  max-width: 800px;
+}

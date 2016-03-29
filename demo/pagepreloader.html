@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width; initial-scale=1.0">
+    <title>Backgroundor</title>
+    <link rel="stylesheet" href="./css/index.css" />
+    <link rel="stylesheet" href="./css/font-awesome.min.css" />
+    <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js?autoload=true&amp;skin=doxy&amp;lang=css" defer="defer"></script>
+    <style type="text/css">
+      #pagepre {
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h2>Cool right?</h2>
+      <p>And it's stylish too!</p>
+    </header>
+
+    <p class="intro">
+      I bet no one (yet) got a preloader like this!
+      <br/><br/>
+      Below the used code for this example
+    </p>
+
+    <pre class="prettyprint lang-javascript">
+      // javascript using jQuery
+      $(document).ready(function() {
+        $('header').backgroundor('lgradient',{intervaltime: 80, colors: ['#3b679e','#137FD8','#7db9e8']});
+        $('#pagepre').backgroundor('lgradient',{intervaltime: 70, colors: ['#7db9e8','#137FD8','#3b679e'], animdegree: '135deg'});
+        $(window).load(function() {
+          setTimeout(function(){
+            $("#pagepre").fadeOut(1000,function(){
+              $(this).remove();
+            });
+          },1500);
+        });
+      });
+    </pre>
+
+    <pre class="prettyprint lang-css">
+      /* css */
+      #pagepre {
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+      }
+    </pre>
+
+    <p class="intro" style="margin-top: 30px;">
+      Go back to <a href="index.html">index</a> to check the rest of the examples
+    </p>
+
+    <div id="pagepre"></div>
+
+    <script src="./js/jQuery191.js"></script>
+    <script src="./js/backgroundor.jquery.js"></script>
+
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $('#pagepre').backgroundor('lgradient',{intervaltime: 70, colors: ['#7db9e8','#137FD8','#3b679e'], animdegree: '135deg'});
+        $('header').backgroundor('lgradient',{intervaltime: 80, colors: ['#3b679e','#137FD8','#7db9e8']});
+        $(window).load(function() {
+          setTimeout(function(){
+            $("#pagepre").fadeOut(1000,function(){
+              $(this).remove();
+            });
+          },1500);
+        });
+      });
+    </script>
+
+  </body>
+</html>

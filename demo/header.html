@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width; initial-scale=1.0">
+    <title>Backgroundor</title>
+    <link rel="stylesheet" href="./css/index.css" />
+    <link rel="stylesheet" href="./css/font-awesome.min.css" />
+    <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js?autoload=true&amp;skin=doxy&amp;lang=javascript" defer="defer"></script>
+  </head>
+  <body>
+    <header>
+      <h2>See!</h2>
+      <p>The header now is cooler!</p>
+    </header>
+
+    <p class="intro">
+      The header idea is cool, isn't it?
+      <br/><br/>
+      Below the used code for this example
+    </p>
+
+    <pre class="prettyprint lang-javascript">
+      $(document).ready(function() {
+        $('header').backgroundor('lgradient',{intervaltime: 80, colors: ['#3b679e','#137FD8','#7db9e8']});
+      });
+    </pre>
+
+    <p class="intro" style="margin-top: 20px;">
+      Go back to <a href="index.html">index</a> to check the rest of the examples
+    </p>
+
+    <script src="./js/jQuery191.js"></script>
+    <script src="./js/backgroundor.jquery.js"></script>
+
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $('header').backgroundor('lgradient',{intervaltime: 80, colors: ['#3b679e','#137FD8','#7db9e8']});
+      });
+    </script>
+
+  </body>
+</html>

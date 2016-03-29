@@ -19,13 +19,13 @@ Backgroundor is a jQuery plugin made to be the Background Animator and that's wh
   - `type` is a **String** to define the type of the animation
   - `options` is a **JSON Object** to specify the colors, intervaltime, animation curve, ..etc.
 
-  ###### type
+  **type**
   The types of animation are:
   - `'opacity'` for opacity animation, it's the **Default**.
   - `'lgradient'` for linear-gradient animation
   - `'rgradient'` coming soon for radial-gradient animation
 
-  ###### options
+  **options**
   Options is an object with following elements:
   ```javascript
   // the values here are the default values
@@ -40,8 +40,9 @@ Backgroundor is a jQuery plugin made to be the Background Animator and that's wh
   }
   ```
 
-  for the gradient values I would suggest the website below to help you
+  for the gradient values I would suggest one of the websites below to help you
   > http://www.colorzilla.com/gradient-editor/
+  > http://www.cssmatic.com/gradient-generator
 
 # How to Use it
   It's easy like every jQuery plugin, just print the following:
@@ -49,4 +50,4 @@ Backgroundor is a jQuery plugin made to be the Background Animator and that's wh
   The default will opacity animation with `100ms` speedtime, to change the defaults look at the [API Reference](https://github.com/KhaledElAnsari/backgroundor#api-reference) for more information.
 
 # Work in progress
-  In the future I'll be adding a function for the radial-gradient animation and of course some enhancements.
+  In the future I'll add a function for the radial-gradient animation.
