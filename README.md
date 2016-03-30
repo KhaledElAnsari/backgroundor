@@ -48,6 +48,10 @@ Backgroundor is a jQuery plugin made to be the Background Animator and that's wh
   It's easy like every jQuery plugin, just print the following:
   `$('#div').backgroundor();`
   The default will opacity animation with `100ms` speedtime, to change the defaults look at the [API Reference](https://github.com/KhaledElAnsari/backgroundor#api-reference) for more information.
+  
+# License
+
+This project is under the MIT license.
 
 # Work in progress
   In the future I'll add a function for the radial-gradient animation.
