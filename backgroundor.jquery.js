@@ -67,7 +67,7 @@
         '-webkit-transition' : transitionStr,
         '-moz-transition'    : transitionStr,
         '-o-transition'      : transitionStr,
-        'transition'         : transitionStr,
+        'transition'         : transitionStr
       });
       setInterval(function(){
         if(reverse == false){
@@ -82,6 +82,11 @@
         var color = opColor + options.opacityval + ")";
         $(elem).css({
           'background':color,
+          '-webkit-transform'  : 'translate3d(0,0,0)',
+          '-moz-transform'     : 'translate3d(0,0,0)',
+          '-ms-transform'      : 'translate3d(0,0,0)',
+          '-o-transform'       : 'translate3d(0,0,0)',
+          'transform'          : 'translate3d(0,0,0)'
         });
       }, options.intervaltime);
     };
@@ -125,7 +130,12 @@
           'background':color2,
           'background':color3,
           'background':color4,
-          'background-size': '130% 130%',
+          'background-size' : '130% 130%',
+          '-webkit-transform'  : 'translate3d(0,0,0)',
+          '-moz-transform'     : 'translate3d(0,0,0)',
+          '-ms-transform'      : 'translate3d(0,0,0)',
+          '-o-transform'       : 'translate3d(0,0,0)',
+          'transform'          : 'translate3d(0,0,0)'
         });
       }, options.intervaltime);
     };
