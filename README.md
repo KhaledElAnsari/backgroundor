@@ -42,6 +42,7 @@ Backgroundor is a jQuery plugin made to be the Background Animator and that's wh
 
   for the gradient values I would suggest one of the websites below to help you
   > http://www.colorzilla.com/gradient-editor/
+  
   > http://www.cssmatic.com/gradient-generator
 
 # How to Use it
