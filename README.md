@@ -6,10 +6,15 @@ Backgroundor is a jQuery plugin made to be the Background Animator and that's wh
 
 # Installation
   This plugin depends on **jQuery** only (any version above/equal 1.7 will be ok), so all you have to do is the following:
-  ```javascript
+  ```html
   <script type="text/javascript" src="/js/jQuery191.js"></script>
   <script type="text/javascript" src="/js/backgroundor.jquery.js"></script>
   ```
+  Or you can just install it with npm:
+  ```
+  npm install backgroundor
+  ```
+  
   Soon there will be a **Vanilla JS** version of it.
 
 # API Reference
