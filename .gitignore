@@ -1,2 +1,6 @@
+# Folders
+node_modules
+
+# Files
 todos
 index_dev.js

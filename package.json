@@ -1,0 +1,47 @@
+{
+  "name": "backgroundor",
+  "version": "0.1.1",
+  "description": "a jquery plugin to add animation for the background color specially gradient colors",
+  "main": "backgroundor.jquery.js",
+  "scripts": {
+    "build": "npm run clean && npm run uglify",
+    "clean": "rimraf *.min.*",
+    "uglify": "uglifyjs backgroundor.jquery.js --output backgroundor.jquery.min.js --source-map backgroundor.jquery.min.js.map",
+    "test": "npm run test:clean && npm run test:build && npm run test:watch",
+    "test:clean": "rimraf test/build",
+    "test:build": "gulp browserify",
+    "test:watch": "gulp watch",
+    "test:run": "gulp server",
+    "server:clear": "killall -9 node"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KhaledElAnsari/backgroundor.git"
+  },
+  "keywords": [
+    "jquery-plugin",
+    "ecosystem:jquery",
+    "jquery",
+    "plugins",
+    "animation",
+    "gradient",
+    "css3"
+  ],
+  "author": "Khaled Al-Ansari <khaledelansari@gmail.com> (http://khaledelansari.com/)",
+  "license": "MIT",
+  "dependencies": {
+    "jquery": ">=1.7.1"
+  },
+  "bugs": {
+    "url": "https://github.com/KhaledElAnsari/backgroundor/issues"
+  },
+  "homepage": "https://github.com/KhaledElAnsari/backgroundor#readme",
+  "devDependencies": {
+    "browserify": "^13.1.1",
+    "gulp": "^3.9.1",
+    "jquery": "^3.1.1",
+    "qunitjs": "^2.0.1",
+    "socket.io": "^1.7.0",
+    "vinyl-source-stream": "^1.1.0"
+  }
+}

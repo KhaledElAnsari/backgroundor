@@ -1,5 +1,5 @@
 (function($) {
-  $.fn.backgroundor = function(type, options){
+  $.fn.backgroundor = function(type, options) {
     var type    = typeof type    !== 'undefined' && type.constructor    === String ? type    : 'opacity';
     var options = typeof options !== 'undefined' && options.constructor === Object ? options : {};
 
@@ -37,7 +37,7 @@
     }
 
     /* this function is written by @subodhghulaxe */
-    function convertHex(hex){
+    function convertHex(hex) {
       hex = hex.replace('#','');
       var r = parseInt(hex.substring(0,2), 16);
       var g = parseInt(hex.substring(2,4), 16);
@@ -62,18 +62,18 @@
     /*** choose the type of the animation ***/
 
     /*** the opacity animation function ***/
-    function backOpacity(elem){
+    function backOpacity(elem) {
       $(elem).css({
         '-webkit-transition' : transitionStr,
         '-moz-transition'    : transitionStr,
         '-o-transition'      : transitionStr,
         'transition'         : transitionStr
       });
-      setInterval(function(){
-        if(reverse == false){
+      setInterval(function() {
+        if(reverse === false) {
           options.opacityval += 1;
         }
-        else if(reverse == true){
+        else if(reverse === true) {
           options.opacityval -= 1;
         }
         if(options.opacityval <= 0) {reverse = false;}
@@ -89,11 +89,11 @@
           'transform'          : 'translate3d(0,0,0)'
         });
       }, options.intervaltime);
-    };
+    }
     /*** the opacity animation function ***/
 
     /*** the gradient animation function ***/
-    function backGradient(elem){
+    function backGradient(elem) {
       setInterval(function(){
         for (var i = 0; i < options.values.length; i++) {
           if(options.values[i] < 100){
@@ -126,11 +126,11 @@
         color4 += ') center';
 
         $(elem).css({
-          'background':color1,
-          'background':color2,
-          'background':color3,
-          'background':color4,
-          'background-size': '130% 130%',
+          'background': color1,
+          'background': color2,
+          'background': color3,
+          'background': color4,
+          'background-size' : '130% 130%',
           '-webkit-transform'  : 'translate3d(0,0,0)',
           '-moz-transform'     : 'translate3d(0,0,0)',
           '-ms-transform'      : 'translate3d(0,0,0)',
@@ -138,8 +138,8 @@
           'transform'          : 'translate3d(0,0,0)'
         });
       }, options.intervaltime);
-    };
+    }
     /*** the gradient animation function ***/
 
-  }
+  };
 })(jQuery);

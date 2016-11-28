@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>QUnit Example</title>
+    <link rel="stylesheet" href="./qunit.css">
+    <style>
+      [id^="test"] {
+        height: 100px;
+        margin-bottom: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="test"></div>
+    <div id="test2"></div>
+    <div id="test3"></div>
+
+    <div id="qunit"></div>
+    <div id="qunit-fixture"></div>
+    <script type="text/javascript" src="./build/bundle.js"></script>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script>
+    var socket = io.connect('/');
+    socket.on('browserRefresh', function() {
+      console.log("browser will be refreshed in a sec...");
+      document.location.reload(true);
+    });
+    </script>
+  </body>
+</html>
